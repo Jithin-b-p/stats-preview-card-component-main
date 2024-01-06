@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 34.125em) {
+    font-size: 46%;
+  }
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--color-primary-500);
+  color: var(--color-neutral-200);
+}
+
+.stat-preview {
+  background-color: var(--color-primary-400);
+
+  @media only screen and (max-width: 63em) {
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 3.3rem;
+    font-weight: var(--fw-700);
+    color: var(--color-white);
+
+    & span {
+      color: var(--color-accent-300);
+    }
+
+    @media only screen and (max-width: 34.125em) {
+      font-size: 4rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    font-weight: var(--fw-400);
+    line-height: 1.8;
+
+    @media only screen and (max-width: 34.125em) {
+      font-size: 2rem;
+    }
+  }
+
+  &__gain {
+    text-transform: uppercase;
+
+    & .count {
+      font-size: 2rem;
+      font-weight: var(--fw-700);
+      color: var(--color-white);
+
+      @media only screen and (max-width: 34.125em) {
+        font-size: 3rem;
+      }
+    }
+
+    & .domain {
+      font-family: var(--ff-secondary);
+      font-size: 1rem;
+      letter-spacing: 1px;
+
+      @media only screen and (max-width: 34.125em) {
+        font-size: 2rem;
+      }
+    }
+
+    &--companies .count {
+      text-transform: none;
+    }
+  }
+}
